@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.11",
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "nodemon": "^2.0.2",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "tests": "NODE_ENV=testing && jest --runInBand --detectOpenHandles --config ./jest.config.js",
+    "dev": "cd src && NODE_ENV=development nodemon app.js",
+    "prod": "cd src && NODE_ENV=production nodemon app.js",
+    "test": "cd src && NODE_ENV=testing nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "companies-catalogue"
+  },
+  "author": "ewelina-makowska",
+  "license": "ISC"
+}
