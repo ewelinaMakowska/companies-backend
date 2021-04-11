@@ -17,6 +17,7 @@ module.exports = {
   port: process.env.PORT || 80,
   db: {
     database: process.env.DB_NAME,
+    dialect: 'mysql',
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     options: {
