@@ -23,11 +23,11 @@
     "jest": "^26.6.3"
   },
   "scripts": {
+    "start": "cd src && NODE_ENV=production node app.js",
     "tests": "NODE_ENV=testing && jest --runInBand --detectOpenHandles --config ./jest.config.js",
     "dev": "cd src && NODE_ENV=development nodemon app.js",
     "prod": "cd src && NODE_ENV=production nodemon app.js",
-    "test": "cd src && NODE_ENV=testing nodemon app.js",
-    "start": "cd src && NODE_ENV=production"
+    "test": "cd src && NODE_ENV=testing nodemon app.js"
   },
   "repository": {
     "type": "git",
