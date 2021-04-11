@@ -14,7 +14,7 @@ const dotenv = require('dotenv').config({path: envPath});
 
 
 module.exports = { 
-  port: process.env.PORT,
+  port: process.env.PORT || 8000,
   db: {
     database: process.env.DB_NAME,
     user: process.env.DB_USER,
