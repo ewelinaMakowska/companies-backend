@@ -16,11 +16,11 @@ const dotenv = require('dotenv').config({path: envPath});
 module.exports = { 
   port: process.env.PORT || 80,
   db: {
-    database: process.env.DB_NAME,
+    database: process.env.DB_NAME || 'testName',
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     options: {
-      dialect: process.env.DB_DIALECT,
+      dialect: process.env.DB_DIALECT || 'mysql',
       host: process.env.HOST,
       operatorsAliases: process.env.DB_OPERATOR_ALIASES
     }
